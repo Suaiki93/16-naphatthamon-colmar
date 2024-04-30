@@ -1,3 +1,56 @@
 h1{
-    color: pink;
+    color: black;
+}
+header{
+    color: bisque;
+}
+
+.header{
+    margin-left: 24px;
+    padding: 0px;
+    height: 64px;
+    
+}
+
+.header-right{
+    display: flexbox;
+    gap: 16px;
+    float: right;
+    margin-right: 24px;
+    padding: 16px;
+}
+
+a{
+    list-style-type: none;
+    margin-right: 16px;
+
+}
+
+.banner{
+    display: inline-flex;
+    background-color: lightgrey;
+    
+}
+
+.img-banner{
+    width: 60%;
+    margin: 32px 24px;
+}
+
+button{
+    margin: 8px 8px;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
+
+.banner-text{
+    margin-left: 0;
+    text-align: center;
+}
+
+.card-section{
+    display: flexbox;
 }
