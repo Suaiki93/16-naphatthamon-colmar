@@ -1,56 +1,253 @@
-h1{
-    color: black;
-}
-header{
-    color: bisque;
-}
-
-.header{
-    margin-left: 24px;
-    padding: 0px;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 24px;
     height: 64px;
-    
-}
+    .logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      p {
+        font-size: 32px;
 
-.header-right{
+        span {
+          color: darkgray;
+        }
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      ul {
+        display: flex;
+        list-style: none;
+        li {
+          margin-left: 16px;
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+
+/*.header-right{
     display: flexbox;
     gap: 16px;
     float: right;
     margin-right: 24px;
     padding: 16px;
-}
+}*/
 
-a{
-    list-style-type: none;
-    margin-right: 16px;
 
-}
-
-.banner{
-    display: inline-flex;
+.hero{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
     background-color: lightgrey;
     
 }
 
-.img-banner{
+.hero-left{
     width: 60%;
-    margin: 32px 24px;
+    padding: 32px;
+    img{
+        max-width: 100%;
+
+    }
+
+
 }
 
-button{
-    margin: 8px 8px;
-    border-radius: 0%;
-    -webkit-border-radius: 0%;
-    -moz-border-radius: 0%;
-    -ms-border-radius: 0%;
-    -o-border-radius: 0%;
-}
 
-.banner-text{
-    margin-left: 0;
-    text-align: center;
-}
+    .hero-right {
+        width: 40%;
+        padding: 32px 24px;
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 20px;
+          margin-bottom: 16px;
+        }
+        button {
+          padding: 8px 8px;
+          width: 100%;
+          font-size: 16px;
+          background-color: rgba(15, 14, 14, 0.733);
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+      }
+
+      .information {
+        display: flex;
+        padding: 32px 24px;
+        .info-card {
+          display: flex;
+          flex-direction: column;
+    
+        }
+        .info-left {
+          width: 60%;
+          padding: 24px 32px;
+          img {
+            max-width: 100%;
+          }
+          h3 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 20px;
+    
+          }
+          h2,p{
+              margin-bottom: 24px;
+          }
+    
+        }
+        .info-right {
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+    
+          .card {
+            background-color: lightgray;
+            display: flex;
+            width: 100%;
+            padding: 16px;
+            img {
+              width: 35%;
+    
+            }
+          }
+          .info-card{
+              display: flex;
+              justify-content: center;
+              width: 65%;
+              padding: 12px 12px;
+              h3,p{
+                  margin-bottom: 8px;
+              }
+          }
+    
+        }
+      }
+
 
 .card-section{
-    display: flexbox;
+    
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3,1fr);
+    
 }
+
+.card img{
+    width: 100%;
+}
+
+.course{
+    background-color: lightgray;
+    padding: 0 72px;
+
+
+}
+
+.startlearning{
+    text-align: center;
+    padding-top: 32px ;
+    padding-bottom: 32px;
+
+
+}
+
+
+
+.thesis {
+    display: flex;
+    padding: 32px 24px;
+    text-align: left;
+    .info-card {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .thesis-left {
+      width: 60%;
+      padding: 32px 24px;
+      video {
+        width: 100%;
+      }
+      h3 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 20px;
+
+      }
+      h2,p{
+          margin-bottom: 24px;
+      }
+
+    }
+    .thesis-right {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+
+      .card {
+        display: flex;
+        width: 100%;
+        padding: 16px;
+        img {
+          width: 35%;
+
+        }
+      }
+      .info-card{
+          display: flex;
+          justify-content: center;
+          width: 65%;
+          padding: 12px 12px;
+          h3,p{
+              margin-bottom: 8px;
+          }
+      }
+
+    }
+  }
+
+  .thesisexhibit{
+    text-align: center;
+    padding-top: 32px ;
+    padding-bottom: 32px;
+    background-color: lightgray;
+
+    
+
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left:24px;
+    padding-top: 16px;
+    background-color: lightgray;
+
+}
+
+/*.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+  }*/
+  
